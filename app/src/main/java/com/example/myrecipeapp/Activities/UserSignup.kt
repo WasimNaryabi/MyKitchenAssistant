@@ -81,7 +81,7 @@ class UserSignup : AppCompatActivity() {
                 InputMethodManager.HIDE_NOT_ALWAYS);*/
 
         if (netConnection) {
-            regProgress.visibility = View.VISIBLE
+
 
             if (userName == "") {
                 nameField!!.error = "Name required!"
@@ -96,7 +96,7 @@ class UserSignup : AppCompatActivity() {
             } else if (userPassword != userConPassword) {
                 conPasswordField!!.error = "password not match"
             } else {
-                //regProgress.setVisibility(View.VISIBLE);
+                regProgress.visibility = View.VISIBLE
                 window.setFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE,
                         WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE)
                 registorAuth.createUserWithEmailAndPassword(userEmail!!, userPassword!!)
