@@ -57,6 +57,7 @@ class UserLogin : AppCompatActivity() {
         registorAuth = FirebaseAuth.getInstance()
         checkConnection()
         loginBtn!!.setOnClickListener {v ->
+
             val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as? InputMethodManager
             imm?.hideSoftInputFromWindow(v.windowToken, 0)
 
