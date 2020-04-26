@@ -81,7 +81,7 @@ class UserSignup : AppCompatActivity() {
                 InputMethodManager.HIDE_NOT_ALWAYS);*/
 
         if (netConnection) {
-
+            regProgress.visibility = View.VISIBLE
 
             if (userName == "") {
                 nameField!!.error = "Name required!"
