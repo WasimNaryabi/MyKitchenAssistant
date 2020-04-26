@@ -57,7 +57,10 @@ class UserSignup : AppCompatActivity() {
         registorAuth = FirebaseAuth.getInstance()
         rootRef = FirebaseDatabase.getInstance().reference
 
-        signupBtn!!.setOnClickListener { newUserRegistor() }
+        signupBtn!!.setOnClickListener {v->
+            val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as? InputMethodManager
+            imm?.hideSoftInputFromWindow(v.windowToken, 0)
+            newUserRegistor() }
 
         loginScreeBtn!!.setOnClickListener {
             val loginScreen = Intent(this@UserSignup, UserLogin::class.java)

@@ -56,7 +56,10 @@ class UserLogin : AppCompatActivity() {
         regProgress.visibility = View.GONE
         registorAuth = FirebaseAuth.getInstance()
         checkConnection()
-        loginBtn!!.setOnClickListener {
+        loginBtn!!.setOnClickListener {v ->
+            val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as? InputMethodManager
+            imm?.hideSoftInputFromWindow(v.windowToken, 0)
+
             userEmail = emailField!!.text.toString().trim { it <= ' ' }
             userPassword = passwordField!!.text.toString().trim { it <= ' ' }
 
