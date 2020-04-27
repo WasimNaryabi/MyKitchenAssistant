@@ -1,5 +1,5 @@
 # MyKitchenAssistant
-https://github.com/WasimNaryabi/My-Kitchen-Assistant.git
+https://github.com/WasimNaryabi/MyKitchenAssistant.git
 
 My Kitchen Assistant is Android Application made using Kotlin programming language and use Firebase for back data management
 
