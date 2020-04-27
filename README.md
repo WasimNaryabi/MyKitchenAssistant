@@ -23,5 +23,6 @@ This app is consist of 10 Activities
 9) About us
 10) Recipe Detials
 
+The complete blueprint of app is below: 
 
-
+![](MyKitchenAssistant.jpg)
